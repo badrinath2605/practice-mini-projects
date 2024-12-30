@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="uchess.css">
+</head>
+<body>
+    <h1>Chess Game</h1>
+    <div class="board">
+    <table class="board">
+        <tr>
+            <td class="cell" id="1A"><div class="piece blk black-pawn-one"><i class="fa-solid fa-chess-pawn"></i></div></td>
+            <div class="piece blk black-pawn-one"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-two"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-three"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-four"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-five"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-six"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-seven"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece blk black-pawn-eight"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-one"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-two"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-three"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-four"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-five"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-six"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-seven"><i class="fa-regular fa-chess-pawn"></i></div>
+            <div class="piece wht white-pawn-eight"><i class="fa-regular fa-chess-pawn"></i></div>
+
+            <td class="cell" id="1B"></td>
+            <td class="cell" id="1C"></td>
+            <td class="cell" id="1D"></td>
+            <td class="cell" id="1E"></td>
+            <td class="cell" id="1F"></td>
+            <td class="cell" id="1G"></td>
+            <td class="cell" id="1H"></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="cell" id="2A"></td>
+            <td class="cell" id="2B"></td>
+            <td class="cell" id="2C"></td>
+            <td class="cell" id="2D"></td>
+            <td class="cell" id="2E"></td>
+            <td class="cell" id="2F"></td>
+            <td class="cell" id="2G"></td>
+            <td class="cell" id="2H"></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="cell" id="3A"></td>
+            <td class="cell" id="3B"></td>
+            <td class="cell" id="3C"></td>
+            <td class="cell" id="3D"></td>
+            <td class="cell" id="3E"></td>
+            <td class="cell" id="3F"></td>
+            <td class="cell" id="3G"></td>
+            <td class="cell" id="3H"></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td class="cell" id="4A"></td>
+            <td class="cell" id="4B"></td>
+            <td class="cell" id="4C"></td>
+            <td class="cell" id="4D"></td>
+            <td class="cell" id="4E"></td>
+            <td class="cell" id="4F"></td>
+            <td class="cell" id="4G"></td>
+            <td class="cell" id="4H"></td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td class="cell" id="5A"></td>
+            <td class="cell" id="5B"></td>
+            <td class="cell" id="5C"></td>
+            <td class="cell" id="5D"></td>
+            <td class="cell" id="5E"></td>
+            <td class="cell" id="5F"></td>
+            <td class="cell" id="5G"></td>
+            <td class="cell" id="5H"></td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td class="cell" id="6A"></td>
+            <td class="cell" id="6B"></td>
+            <td class="cell" id="6C"></td>
+            <td class="cell" id="6D"></td>
+            <td class="cell" id="6E"></td>
+            <td class="cell" id="6F"></td>
+            <td class="cell" id="6G"></td>
+            <td class="cell" id="6H"></td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td class="cell" id="7A"></td>
+            <td class="cell" id="7B"></td>
+            <td class="cell" id="7C"></td>
+            <td class="cell" id="7D"></td>
+            <td class="cell" id="7E"></td>
+            <td class="cell" id="7F"></td>
+            <td class="cell" id="7G"></td>
+            <td class="cell" id="7H"></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td class="cell" id="8A"></td>
+            <td class="cell" id="8B"></td>
+            <td class="cell" id="8C"></td>
+            <td class="cell" id="8D"></td>
+            <td class="cell" id="8E"></td>
+            <td class="cell" id="8F"></td>
+            <td class="cell" id="8G"></td>
+            <td class="cell" id="8H"></td>
+            <td>8</td>
+        
+
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+            <th></th>
+        </tr>
+
+    </table>
+    </div>
+    <script src="chess.js"></script>
+</body>
+</html>
